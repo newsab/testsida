@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <link rel="stylesheet" href="css/varatjanster.css">
 
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,12 +36,86 @@
                 </div>
             </div>
 
-            <div class="containerFullWidth top">
-                <div class="halfBox topLeft">
-                    <h1>Våra tjänster</h1>
+            <div class="containerFullWidth second">
+                <h2>Vad vi gör</h2>
+                <div class="thirdBox">
+                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-web-design-2.png" alt=""
+                        onclick="showInfo1()">
+                    <h3 id="infoHeading1">Bygga hemsida</h3>
                 </div>
+                <div class="thirdBox">
+                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-building-website-3.png" alt=""
+                        onclick="showInfo2()">
+                    <h3 id="infoHeading2">Hosting</h3>
+                </div>
+                <div class="thirdBox">
+                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-seo-optimize-1.png" alt=""
+                        onclick="showInfo3()">
+                    <h3 id="infoHeading3">Drift & uppdatering</h3>
+                </div>
+            </div>
+
+            <div class="containerFullWidth">
+                <div class="secondInfo" id="info1">
+                    <div class="secondInfoTextBox">
+                        <p>På news skapar vi hemsidor från grunden vilket ger oss frihet att designa sidorna precis som
+                            du vill.
+                            Alla hemsidor som vi gör är responsiva vilket betyder att de anpassar innehåll och design
+                            efter den
+                            enhet och webbläsare besökaren använder.
+
+                            Vi ser även till att du får e-postadresser kopplade till ditt domännamn och hjälper dig att
+                            konfigurera dessa så att du kommer åt din mail.</p>
+                    </div>
+                </div>
+
+                <div class="secondInfo" id="info2">
+                    <div class="secondInfoTextBox">
+                        <p>Har du en hemsida i behov av löpande uppdateringar och ändringar? Det kanske rör sig om att
+                            lägga upp
+                            bilder från utförda jobb, ett nyhetsflöde eller liknande då hjälper vi dig med detta efter
+                            dina
+                            önskemål.
+
+                            Vi ser även till att förnya köp av dommännamn, förnya köp av hosting tjänster och att
+                            SSL-certifikat
+                            för sidorna är uppdaterade och att de därmed är säkra att surfa på.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="secondInfo" id="info3">
+                    <div class="secondInfoTextBox">
+                        <p>För dig med lokaler installerar vi routrar, switchar och wi-fisändare utifrån din lokals
+                            specifika
+                            förutsättningar och dina behov.
+
+                            Vi konfigurerar även ditt nätverk för att öka prestandan och kan skapa olika nätverk hos dig
+                            utifrån
+                            dina önskemål. Exempelvis om du har behov av ett 'osynligt'-nätverk för smarta produkter
+                            eller ett
+                            separat gästnätverk för kunder eller besökare vid sidan av ditt ordinarie nätverk.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="containerFullWidth previousWorkHeading">
+                <h2>Vad vi gjort</h2>
+            </div>
+            <div class="containerFullWidth previousWork">
+       
+
                 <div class="halfBox">
-                    <img id="topImage" src="bilder/404error.png" alt="">
+                    <img id="segelstads" src="bilder/segelstads.png" alt="">
+                </div>
+
+                <div class="halfBox previousWorkRight">
+                    <h3>Hemsida</h3>
+                    <p>När Rebecka på Segelstads Rehab kontaktade oss och önskade att vi skulle ta över drift och
+                        underhåll av hennes befintliga sida. Hon hade en önskan om en rad förändringar som hon ville ha
+                        hjälp med. Efter att vi tillsammans gjort en analys av nuvarande webbplats och det aktuella
+                        behovet så kom vi gemensamt fram till att det var enklast och bäst att skapa en ny webbplats.
+                    </p>
+                    <a href="kontakt.html" class="button" id="thirdRightButton">Läs mer</a>
                 </div>
             </div>
 

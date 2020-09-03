@@ -1,0 +1,119 @@
+@import "style.css";
+
+body{
+    background-color: var(--mainColor);
+}
+
+.top{
+    height: fit-content;
+    background-color: var(--mainColor);
+}
+
+#topImage{
+    height: auto;
+    width: 100%;
+}
+
+.contactBox h2{
+    margin: 0px 0px 10px 5%;
+    text-align: left;
+    line-height: 175%;
+}
+
+#contactText{
+    margin: 0px 70px 50px 5%;
+    text-align: left;
+    line-height: 175%;
+}
+
+.contactForm{
+    width: 85%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  
+  form input, textarea, select, option{
+    font-size: 100%;
+    color: black;
+    width: 98.6%;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    padding: 0.7%;
+    border: none;
+    background-color: var(--secondColor);
+  }
+  
+  
+  input:active{
+    border-color: var(--accentColor);
+  }
+  
+  form label{
+    color: var(--accentColor);
+    text-align: left;
+    width: 95%;
+    
+  }
+  
+  #file{
+    font-size: 80%;
+    background-color: inherit;
+  }
+  
+  #buttonMail{
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    float: right;
+    color: white;
+    background-color: var(--accentColor);
+    border: none; 
+    margin-right: 5%;
+  }
+  
+  #buttonMail:hover{
+    color: var(--accentColor);
+    background-color: white;
+    border: 1px solid var(--accentColor); 
+  }
+  
+  #checkbox{
+    margin-right: 1em;
+    margin-bottom: 0em;
+  }
+  
+  form #lastName{
+    display: none;
+  }
+  
+  /*För Ipad*/
+  @media screen and (min-width: 768px){
+    .contactForm{
+                    
+    }
+  }
+      
+  /*För större skärmar*/
+  @media screen and (min-width: 1024px){    
+  
+  }
+      
+
+@media screen and (min-width: 480px){   
+
+}
+
+@media screen and (min-width: 768px){   
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1441px){
+
+}

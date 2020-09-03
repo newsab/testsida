@@ -1,0 +1,33 @@
+@import "style.css";
+
+.top{
+    height: 30em;
+    background-color: var(--mainColor);
+}
+
+#topImage{
+    height: auto;
+    width: 100%;
+}
+
+.topLeft p, .topLeft h1, .topLeft h2{
+    margin: 20px 0px 0px 100px;
+    text-align: left;
+    line-height: 175%;
+}
+
+@media screen and (min-width: 480px){   
+
+}
+
+@media screen and (min-width: 768px){   
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1441px){
+
+}
