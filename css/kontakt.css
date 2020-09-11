@@ -4,16 +4,6 @@ body{
     background-color: var(--mainColor);
 }
 
-.top{
-    height: fit-content;
-    background-color: var(--mainColor);
-}
-
-#topImage{
-    height: auto;
-    width: 100%;
-}
-
 .contactBox h2{
     margin: 60px 0px 40px 5%;
     text-align: left;
@@ -42,8 +32,7 @@ body{
     padding: 0.7%;
     border: none;
     background-color: var(--secondColor);
-  }
-  
+  }  
   
   input:active{
     border-color: var(--accentColor);
@@ -59,17 +48,6 @@ body{
   #file{
     font-size: 80%;
     background-color: inherit;
-  }
-  
-  #mailButton{
-    float: right;
-
-  }
-  
-  #buttonMail:hover{
-    color: var(--accentColor);
-    background-color: white;
-    border: 1px solid var(--accentColor); 
   }
   
   #checkbox{

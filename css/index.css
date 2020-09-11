@@ -1,7 +1,7 @@
 @import "style.css";
 
 .top{
-    height: 30em;
+    height: fit-content;
     background-color: var(--mainColor);
 }
 
@@ -11,7 +11,7 @@
 }
 
 .topLeft p, .topLeft h1, .topLeft h2{
-    margin: 20px 0px 0px 100px;
+    margin: 20px 30px 0px 30px;
     text-align: left;
     line-height: 175%;
 }
@@ -61,7 +61,11 @@
 }
 
 .previousWork{
-    height: 30em;
+    height: fit-content;
+}
+
+.previousWorkRight{
+    display: none;
 }
 
 .previousWork p{
@@ -85,40 +89,69 @@
 }
 
 .third{
-    height: 25em;
+    height: fit-content;
     background-color: var(--mainColor);
 }
 
 #thirdImage{
-    height: auto;
-    width: 70%; 
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: none;
 }
 
 .thirdRight p, .thirdRight h2{
-    margin: 20px 100px 0px 0px;
+    margin: 20px 30px 0px 30px;
     text-align: left;
     line-height: 175%;
 }
-
-#thirdRightButton{
-    margin: 20px 100px 0px 60%;
-}
-
 
 @media screen and (min-width: 480px){   
 
 }
 
 @media screen and (min-width: 768px){   
+    .topLeft p, .topLeft h1, .topLeft h2{
+        margin: 20px 100px 0px 100px;
+    }
 
+    .thirdRight p, .thirdRight h2{
+        margin: 20px 100px 0px 100px;
+    }
 }
 
 @media screen and (min-width: 1024px){
+    .top{
+        height: 30em;
+    }
 
+    .topLeft p, .topLeft h1, .topLeft h2{
+        margin: 20px 0px 0px 100px;
+    }
+
+    .previousWork{
+        height: 30em;
+    }
+
+    .previousWorkRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .third{
+        height: 25em;
+    }
+
+    .thirdRight p, .thirdRight h2{
+        margin: 20px 100px 0px 0px;
+    }
+
+    #thirdImage{
+        height: auto;
+        width: 70%; 
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1441px){
