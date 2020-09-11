@@ -69,12 +69,12 @@ strong{
 .button{
     width: fit-content;
     height: fit-content;
-    float: right;
     background-color: var(--accentColor); 
     padding: 16px 32px 16px 32px; 
-    margin: 25px 0px 0px 75%;
-    border-radius: 10px;
+    border-radius: 100px;
     text-decoration: none;
+    float: right;
+    color: var(--secondFontColor)
 }
 
 .button:hover{
@@ -99,7 +99,7 @@ strong{
 }
 
 .header{
-    height: 90px;
+    height: 65px;
     background-color: var(--mainColor);
 }
 
