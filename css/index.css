@@ -1,206 +1,221 @@
-@import "style.css";
+@import 'style.css';
 
-.top{
-    height: fit-content;
-    background-color: var(--mainColor);
-   }
+.top {
+  height: fit-content;
+  background-color: var(--mainColor);
+}
 
-#topImage{
+#topImage {
+  height: auto;
+  width: 100%;
+}
+
+.topLeft p,
+.topLeft h1,
+.topLeft h2 {
+  margin: 20px 30px 0px 30px;
+  text-align: left;
+  line-height: 175%;
+}
+
+.second {
+  height: fit-content;
+  background-color: var(--secondFontColor);
+  padding-bottom: 1em;
+}
+
+.second h2,
+.second h3,
+.previousWorkHeading h2 {
+  color: var(--mainColor);
+  text-align: center;
+  margin: 50px 0px 25px 0px;
+}
+
+.thirdBoxImage {
+  height: auto;
+  width: 40%;
+}
+
+.thirdBoxImage:hover {
+  height: auto;
+  width: 40%;
+}
+
+.secondInfo {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--mainColor);
+  text-align: left;
+}
+
+.secondInfoTextBox {
+  width: 50%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  line-height: 150%;
+}
+
+.arrow1,
+.arrow2,
+.arrow3 {
+  height: 2em;
+  float: left;
+  padding: 0;
+  display: none;
+  background-color: var(--secondFontColor);
+}
+
+#arrow1 {
+  content: ' ';
+  width: 0;
+  height: 0;
+  float: left;
+  display: none;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-bottom: 2em solid var(--mainColor);
+
+  position: relative;
+  left: 14%;
+}
+
+#arrow2 {
+  content: ' ';
+  width: 0;
+  height: 0;
+  display: none;
+  float: left;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-bottom: 2em solid var(--mainColor);
+  position: relative;
+  left: 48%;
+}
+
+#arrow3 {
+  content: ' ';
+  width: 0;
+  height: 0;
+  display: none;
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-bottom: 2em solid var(--mainColor);
+  position: relative;
+  left: 81%;
+}
+
+.secondInfoTextBox p {
+  color: var(--secondFontColor);
+}
+
+#info1,
+#info2,
+#info3 {
+  display: none;
+}
+
+.previousWork {
+  height: fit-content;
+}
+
+.previousWorkRight {
+  display: none;
+}
+
+.previousWork p {
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  line-height: 150%;
+  color: var(--mainColor);
+}
+
+#segelstads {
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+
+.previousWork p,
+.previousWork h3 {
+  margin: 0px 100px 0px 0px;
+  text-align: left;
+  line-height: 175%;
+  color: var(--mainColor);
+}
+
+.third {
+  height: fit-content;
+  background-color: var(--mainColor);
+}
+
+#thirdImage {
+  display: none;
+}
+
+.thirdRight p,
+.thirdRight h2 {
+  margin: 20px 30px 0px 30px;
+  text-align: left;
+  line-height: 175%;
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  .topLeft p,
+  .topLeft h1,
+  .topLeft h2 {
+    margin: 20px 100px 0px 100px;
+  }
+
+  .thirdRight p,
+  .thirdRight h2 {
+    margin: 20px 100px 0px 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .top {
+    height: 30em;
+  }
+
+  .topLeft p,
+  .topLeft h1,
+  .topLeft h2 {
+    margin: 20px 0px 0px 100px;
+  }
+
+  .previousWork {
+    height: 30em;
+  }
+
+  .previousWorkRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .third {
+    height: 25em;
+  }
+
+  .thirdRight p,
+  .thirdRight h2 {
+    margin: 20px 100px 0px 0px;
+  }
+
+  #thirdImage {
     height: auto;
-    width: 100%;
-}
-
-.topLeft p, .topLeft h1, .topLeft h2{
-    margin: 20px 30px 0px 30px;
-    text-align: left;
-    line-height: 175%;
-}
-
-.second{
-    height: fit-content;
-    background-color: var(--secondFontColor);
-    padding-bottom: 1em;
-    }
-
-.second h2, .second h3, .previousWorkHeading h2{
-    color: var(--mainColor);
-    text-align: center;
-    margin: 50px 0px 25px 0px;
-}
-
-.thirdBoxImage{
-    height: auto;
-    width: 40%;
-}
-
-.thirdBoxImage:hover{
-    height: auto;
-    width: 40%;
-}
-
-.secondInfo{
-    width: 100%;
-    height: fit-content;
-    background-color: var(--mainColor);
-    text-align: left;
-}
-
-.secondInfoTextBox{
-    width: 50%;
+    width: 70%;
     margin: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.arrow1, .arrow2, .arrow3{
-    width: 100%;
-    height: 4em;
-    float: left;
-    padding: 0;
-    display: none;
-}
-
-#arrow1{
-    content: ' ';  
-    width: 0;
-    height: 0;
-    float: left;
-    display: none;
-    border-left: 60px solid transparent; 
-    border-right: 60px solid transparent; 
-    border-bottom: 100px solid blue; 
-    position: relative;
-    left: 12%;
-}
-
-#arrow2{
-    content: ' ';  
-    width: 0;
-    height: 0;
-    display: none;
-    float: left;
-    border-left: 60px solid transparent; 
-    border-right: 60px solid transparent; 
-    border-bottom: 100px solid blue; 
-    position: relative;
-    left: 46%;
-}
-
-#arrow3{
-    content: ' ';  
-    width: 0;
-    height: 0;
-    display: none;
-    border-left: 60px solid transparent; 
-    border-right: 60px solid transparent; 
-    border-bottom: 100px solid blue; 
-    position: relative;
-    left: 79%;
-}
-
-.secondInfoTextBox p{
-    color: var(--secondFontColor);
-}
-
-#info1, #info2, #info3{
-    display: none;
-}
-
-.previousWork{
-    height: fit-content;
-}
-
-.previousWorkRight{
-    display: none;
-}
-
-.previousWork p{
-    margin: 0px 0px 0px 0px;
-    text-align: left;
-    line-height: 150%;
-    color: var(--mainColor);
-}
-
-#segelstads{
-    height: auto;
-    width: 70%; 
-    margin: auto;
-}
-
-.previousWork p, .previousWork h3{
-    margin: 0px 100px 0px 0px;
-    text-align: left;
-    line-height: 175%;
-    color: var(--mainColor);
-}
-
-.third{
-    height: fit-content;
-    background-color: var(--mainColor);
-}
-
-#thirdImage{
-    display: none;
-}
-
-.thirdRight p, .thirdRight h2{
-    margin: 20px 30px 0px 30px;
-    text-align: left;
-    line-height: 175%;
-}
-
-@media screen and (min-width: 480px){   
-
-}
-
-@media screen and (min-width: 768px){   
-    .topLeft p, .topLeft h1, .topLeft h2{
-        margin: 20px 100px 0px 100px;
-    }
-
-    .thirdRight p, .thirdRight h2{
-        margin: 20px 100px 0px 100px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .top{
-        height: 30em;
-    }
-
-    .topLeft p, .topLeft h1, .topLeft h2{
-        margin: 20px 0px 0px 100px;
-    }
-
-    .previousWork{
-        height: 30em;
-    }
-
-    .previousWorkRight{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .third{
-        height: 25em;
-    }
-
-    .thirdRight p, .thirdRight h2{
-        margin: 20px 100px 0px 0px;
-    }
-
-    #thirdImage{
-        height: auto;
-        width: 70%; 
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 1441px){
-
+@media screen and (min-width: 1441px) {
 }
