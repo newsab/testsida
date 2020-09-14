@@ -2,8 +2,8 @@
 --mainColor: #2c2c2c;
 --secondColor: #383838;
 --accentColor: #ec625b;
---mainFontColor: lightgrey;
---secondFontColor: whitesmoke;
+--mainFontColor: #d3d3d3;
+--secondFontColor: #f5f5f5;
 }
 
 *{

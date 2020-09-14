@@ -40,20 +40,38 @@ $(document).ready(function () {
 
 function showInfo1() {  
     $("#info1").delay(500).slideDown(500); 
+    $("#arrow1").delay(500).slideDown(500); 
+    $(".arrow1").delay(500).slideDown(500); 
+    $(".arrow2").slideUp(500);
+    $("#arrow2").slideUp(500); 
     $("#info2").slideUp(500); 
-    $("#info3").slideUp(500); 
+    $(".arrow3").slideUp(500);
+    $("#arrow3").slideUp(500); 
+    $("#info3").slideUp(500);
 }
 
 function showInfo2() {  
     $("#info2").delay(500).slideDown(500); 
+    $("#arrow2").delay(500).slideDown(500); 
+    $(".arrow2").delay(500).slideDown(500); 
+    $(".arrow1").slideUp(500);
+    $("#arrow1").slideUp(500); 
     $("#info1").slideUp(500); 
+    $(".arrow3").slideUp(500);
+    $("#arrow3").slideUp(500); 
     $("#info3").slideUp(500); 
 }
 
 function showInfo3() {  
     $("#info3").delay(500).slideDown(500); 
+    $("#arrow3").delay(500).slideDown(500); 
+    $(".arrow3").delay(500).slideDown(500); 
+    $(".arrow1").slideUp(500);
+    $("#arrow1").slideUp(500); 
     $("#info1").slideUp(500); 
-    $("#info2").slideUp(500); 
+    $(".arrow2").slideUp(500);
+    $("#arrow2").slideUp(500); 
+    $("#info2").slideUp(500);
 }
 
 function stopShowInfo() {  
