@@ -1,3 +1,5 @@
+@import 'style.css';
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -17,10 +19,10 @@
   }
     
   .modal-content {
-    background-color: rgb(254, 254, 254);
+    background-color: var(--mainFontColor);
     margin: auto;
-    padding: 10px;
-    border: 1px solid rgb(136, 136, 136);
+    padding: 40px;
+    color: var(--mainColor);;
     width: 80%;
     height: 80%;
     overflow: scroll;
@@ -31,11 +33,12 @@
   }
   
   .modal h2, .modal h3{
+    color: var(--mainColor);;
       text-align: left;
   }
     
   .close {
-    color: #aaaaaa;
+    color: var(--accentColor);
     float: right;
     font-size: 28px;
     font-weight: bold;
