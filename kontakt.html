@@ -46,24 +46,35 @@
                     </p> -->
                     <div class="contactForm">
                         <form id="formMail" action="mail/mail.php" name="mailForm" method="POST">
+
+                            <div id="floatContainer" class="float-container">
+                                <label for="floatField">
+                                <input id="floatField" type="text">
+                            </div>
+
                             <label for="name">
                                 <p> Ditt Namn</p>
                             </label>
                             <input type="text" name="name" id="name" required><br>
+                            
                             <input type="text" name="lastName" id="lastName" placeholder="Ingen Reklam Tack!">
+                            
                             <label for="mail">
                                 <p> Din Epost</p>
                             </label>
                             <input type="email" name="mail" id="mail" required><br>
+                            
                             <label for="phone">
                                 <p>Telefonnummer</p>
                             </label>
                             <input type="tel" name="phone" id="phone"><br>
+                            
                             <label for="message">
                                 <p> Ditt Meddelande</p>
                             </label>
                             <textarea name="message" id="message" required rows="6"></textarea><br>
                             <table>
+                                
                                 <td><input type="checkbox" name="checkbox" id="checkbox" value="checkbox" required>
                                 </td>
                                 <td><label for="checkbox" id="lblCheckbox">
@@ -177,6 +188,15 @@
             via email
             på info@newsab.se. Om du har klagomål på vår behandling av dina personuppgifter har du
             rätt att inge klagomål till tillsynsmyndigheten Datainspektionen.
+        </div>
+    </div>
+
+    <div id="kontaktModal" class="modal" onclick="hideModal('kontaktModal')">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <br><br>
+            <h2>Tack för ditt mail!</h2> <br>
+            <p> Vi återkommer så snart vi kan med svar </p><br><br>
         </div>
     </div>
 

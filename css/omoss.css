@@ -1,11 +1,9 @@
 @import "style.css";
 
-body{
-    background-color: var(--mainFontColor);
-}
 
 .top{
     height: fit-content;
+    background-color: var(--mainFontColor);
 }
 
 #topImage{

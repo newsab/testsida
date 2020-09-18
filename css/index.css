@@ -37,11 +37,6 @@
   width: 80%;
 }
 
-/* .thirdBoxImage:hover {
-  height: auto;
-  width: 40%;
-} */
-
 .secondInfo {
   width: 100%;
   height: fit-content;
@@ -61,49 +56,38 @@
 .arrow2,
 .arrow3 {
   height: 2em;
-  float: left;
+  z-index: 2;
+  /* float: left; */
   padding: 0;
   display: none;
   background-color: var(--secondFontColor);
 }
 
-#arrow1 {
-  content: ' ';
-  width: 0;
-  height: 0;
-  float: left;
-  display: none;
-  border-left: 2em solid transparent;
-  border-right: 2em solid transparent;
-  border-bottom: 2em solid var(--mainColor);
-
-  position: relative;
-  left: 14%;
-}
-
-#arrow2 {
-  content: ' ';
-  width: 0;
-  height: 0;
-  display: none;
-  float: left;
-  border-left: 2em solid transparent;
-  border-right: 2em solid transparent;
-  border-bottom: 2em solid var(--mainColor);
-  position: relative;
-  left: 48%;
-}
-
+#arrow1,
+#arrow2,
 #arrow3 {
   content: ' ';
   width: 0;
   height: 0;
+  float: left;
+  z-index: 5;
   display: none;
   border-left: 2em solid transparent;
   border-right: 2em solid transparent;
   border-bottom: 2em solid var(--mainColor);
   position: relative;
-  left: 81%;
+}
+
+#arrow1 {
+  left: 9%;
+}
+
+#arrow2 {
+  left: 43%;
+}
+
+#arrow3 {
+  left: 76%;
 }
 
 .secondInfoTextBox p {
@@ -118,6 +102,10 @@
 
 .previousWork {
   height: fit-content;
+}
+
+#previousWorkBtnOne{
+  margin-right: 10px;
 }
 
 .previousWorkRight {
@@ -171,6 +159,18 @@
     margin: 20px 100px 0px 100px;
   }
 
+  #arrow1 {
+    left: 12%;
+  }
+  
+  #arrow2 {
+    left: 46%;
+  }
+  
+  #arrow3 {
+    left: 79%;
+  }
+
   .thirdBoxImage {
     width: 60%;
   }
@@ -192,12 +192,28 @@
     margin: 20px 0px 0px 100px;
   }
 
+  #arrow1 {
+    left: 14%;
+  }
+  
+  #arrow2 {
+    left: 48%;
+  }
+  
+  #arrow3 {
+    left: 81%;
+  }
+
   .secondInfoTextBox {
     width: 50%;
   }
 
   .previousWork {
     height: 30em;
+  }
+
+  #previousWorkBtnOne, #previousWorkBtnTwo{
+    display: none;
   }
 
   .previousWorkRight {
