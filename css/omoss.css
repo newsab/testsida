@@ -1,7 +1,5 @@
 @import "style.css";
 
-
-
 .top{
     height: fit-content;
     background-color: var(--mainFontColor);
@@ -19,7 +17,7 @@
     color: var(--mainColor);
 }
 
-.aboutUsHeading h2 {
+.aboutUs h2, .aboutUsHeading h2 {
     color: var(--mainColor);
     text-align: center;
     margin: 50px 0px 25px 0px;
@@ -30,7 +28,14 @@
     padding-top: 12.5em;
 }
 
-#menu{
+#mats{
+    padding-top: 13em;
+}
+
+#menu1,
+#menu2{
+    position: fixed;
+    z-index: 10;
     width: 150px;
     height: 150px;
     position: relative;
@@ -46,26 +51,37 @@
     opacity: 0;
     z-index: -1;
     height: 150px;
-    border: 5px solid var(--accentColor);
+    border: 2px solid var(--mainColor);
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -75px 0 0 -75px;
     border-radius: 50%;
-    background-color: grey;
     background-size: 100%;
     overflow: hidden;
     text-decoration: none;
 }
 
-#menu:not(:target)>a:first-of-type, 
-#menu:target>a:last-of-type{
+#buttonOne{
+    background-image: url(../bilder/cf.jpeg);
+}
+
+#buttonTwo{
+    background-image: url(../bilder/mats.jpg);
+}
+
+#menu1:not(:target)>a:first-of-type, 
+#menu1:target>a:last-of-type,
+#menu2:not(:target)>a:first-of-type, 
+#menu2:target>a:last-of-type{
     opacity: 1;
     z-index: 1;
 }
 
-#menu:not(:target)>.icon-plus:before, 
-#menu:target>.icon-minus:before{
+#menu1:not(:target)>.icon-plus:before, 
+#menu1:target>.icon-minus:before,
+#menu2:not(:target)>.icon-plus:before, 
+#menu2:target>.icon-minus:before{
     opacity: 1;
 }
 
@@ -93,30 +109,47 @@
 .menu-item a{
     top: 30%;
     left: 0;
-    color: green;
+    color: var(--mainColor);
     position: relative;
     text-decoration: none;
     cursor: pointer;
 }
 
-#menu:target>.menu-item:nth-child(6) {
+#menu1:target>.menu-item:nth-child(6),
+#menu2:target>.menu-item:nth-child(6) {
     transform: rotate(60deg) translateY(-150px) rotate(300deg);
     transition-delay: 0s;
 }
 
-#menu:target>.menu-item:nth-child(5){
+#menu1:target>.menu-item:nth-child(5),
+#menu2:target>.menu-item:nth-child(5){
     transform: rotate(20deg) translateY(-155px) rotate(-20deg);
     transition-delay: 0.1s;
 }
 
-#menu:target>.menu-item:nth-child(3){
+#menu1:target>.menu-item:nth-child(3),
+#menu2:target>.menu-item:nth-child(3){
     transform: rotate(-20deg) translateY(-155px) rotate(20deg);
     transition-delay: 0.2s;
 }
 
-#menu:target>.menu-item:nth-child(4){
+#menu1:target>.menu-item:nth-child(4),
+#menu2:target>.menu-item:nth-child(4){
     transform: rotate(-60deg) translateY(-150px) rotate(60deg);
     transition-delay: 0.3s;
+}
+
+.infoBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--mainColor);
+    border-radius: 100px;
+}
+
+.infoBox p{
+    padding: 10%; 
+    text-decoration: none;
 }
 
 @media screen and (min-width: 480px){   
@@ -124,7 +157,10 @@
 }
 
 @media screen and (min-width: 768px){   
-
+    .infoBox{
+        width: 60%;
+        border-radius: 100px;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -135,6 +171,16 @@
     .topLeft p, .topLeft h1, .topLeft h2{
         margin: 20px 20px 0px 100px;
     }
+
+    .infoBox{
+        width: 60%;
+        border-radius: 100px;
+    }
+
+    #mats{
+        padding-top: 0em;
+    }
+
 }
 
 @media screen and (min-width: 1441px){

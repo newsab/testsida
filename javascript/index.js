@@ -74,6 +74,10 @@ function showInfo3() {
     $("#info2").slideUp(500);
 }
 
-function stopShowInfo() {  
+function stopShowInfo1() {  
     $("#info1").slideUp(500);  
+}
+
+function stopShowInfo2() {  
+    $("#info2").slideUp(500);  
 }

@@ -35,6 +35,7 @@
 .thirdBoxImage {
   height: auto;
   width: 80%;
+  cursor: pointer;
 }
 
 .secondInfo {
