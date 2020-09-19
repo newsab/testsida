@@ -49,3 +49,36 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  #kontaktModal-content{
+    width: 60%;
+    height: 20%;
+
+  }
+
+  #kontaktModal-content h2, #kontaktModal-content p{
+    text-align: center;
+    color: black;
+  }
+
+@media screen and (min-width: 480px){   
+
+}
+
+@media screen and (min-width: 768px){   
+  #kontaktModal-content{
+    width: 40%;
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #kontaktModal-content{
+    width: 30%;
+    height: 25%;
+  }
+}
+
+@media screen and (min-width: 1441px){
+
+}
