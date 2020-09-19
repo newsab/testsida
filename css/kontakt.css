@@ -31,8 +31,13 @@ body{
     margin-top: 0.2em;
     padding: 2%;
     border: none;
+    border-radius: 100px;
     background-color: var(--secondColor);
   }  
+
+  textarea{
+    border-radius: 23px;
+  }
 
   input:active{
     border-color: var(--accentColor);

@@ -150,6 +150,7 @@
 .infoBox p{
     padding: 10%; 
     text-decoration: none;
+    line-height: 175%;
 }
 
 @media screen and (min-width: 480px){   
