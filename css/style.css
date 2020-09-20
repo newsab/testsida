@@ -98,6 +98,15 @@ strong{
     color: var(--mainFontColor);
 }
 
+#foot a{
+    text-decoration: none;
+    color: var(--mainFontColor);  
+}
+
+#foot a:hover{
+    color: var(--accentColor);
+}
+
 .header{
     height: 65px;
     background-color: var(--mainColor);
