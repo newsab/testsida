@@ -94,7 +94,7 @@ strong{
 }
 
 #foot p{
-    font-size: 0.85em;
+    font-size: 0.65em;
     color: var(--mainFontColor);
 }
 
@@ -175,6 +175,10 @@ strong{
         max-width: 768px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #foot p{
+        font-size: 0.85em;
     }
 }
 
