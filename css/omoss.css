@@ -2,19 +2,20 @@
 
 .top{
     height: fit-content;
-    background-color: var(--mainFontColor);
+    background-color: var(--mainColor);
 }
 
 #topImage{
     height: auto;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 .topLeft p, .topLeft h1, .topLeft h2{
     margin: 20px 50px 0px 50px;
     text-align: left;
     line-height: 175%;
-    color: var(--mainColor);
+    color: var(--mainFontColor);
 }
 
 .aboutUs h2, .aboutUsHeading h2, .socialMedia h2 {
