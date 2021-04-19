@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/varatjanster.css">
-    <link rel="stylesheet" href="css/slideShow.css"> 
-    <link rel="stylesheet" href="css/index.css"> 
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/slideShow.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,18 +41,21 @@
             <div class="containerFullWidth second">
                 <h2>Vad vi gör</h2>
                 <div class="thirdBox">
-                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-web-design-2.png" alt=""
-                        onclick="showInfo1()" />
+                    <div class="thirdBoxImgHolder">
+                        <img class="thirdBoxImage" src="bilder/pixeltrue-icons-web-design-2.png" alt="" onclick="showInfo1()" />
+                    </div>
                     <h3 id="infoHeading1">Hemsida</h3>
                 </div>
                 <div class="thirdBox">
-                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-building-website-3.png" alt=""
-                        onclick="showInfo2()" />
+                    <div class="thirdBoxImgHolder">
+                        <img class="thirdBoxImage" src="bilder/pixeltrue-icons-building-website-3.png" alt=""onclick="showInfo2()" />
+                        </div>
                     <h3 id="infoHeading2">Hosting</h3>
                 </div>
                 <div class="thirdBox">
-                    <img class="thirdBoxImage" src="bilder/pixeltrue-icons-seo-optimize-1.png" alt=""
-                        onclick="showInfo3()" />
+                    <div class="thirdBoxImgHolder">
+                        <img class="thirdBoxImage" src="bilder/pixeltrue-icons-seo-optimize-1.png" alt="" onclick="showInfo3()" />
+                    </div>
                     <h3 id="infoHeading3">Uppdatering</h3>
                 </div>
             </div>
@@ -119,12 +121,12 @@
             <div class="containerFullWidth previousWorkHeading">
                 <h2>Vad vi gjort</h2>
             </div>
-            
+
             <div class="containerFullWidth previousWork slideShow">
                 <div class="innerSlideShow">
                     <div class="mySlides fade">
                         <div class="halfBox">
-                            <img id="customerimg" src="bilder/segelstads.png" alt="" />
+                            <img class="customerimg" src="bilder/segelstads.png" alt="" />
                             <br><br>
                             <p><a href="segelstads.html" class="button" id="previousWorkBtnTwo">Läs mer</a></p>
                         </div>
@@ -142,9 +144,10 @@
                         </div>
                     </div>
 
+<!--                
                     <div class="mySlides fade">
                         <div class="halfBox">
-                            <img id="customerimg" src="bilder/toysandcomics.png" alt="" />
+                            <img class="customerimg" src="bilder/toysandcomics.png" alt="" />
                             <br><br>
                             <p><a href="toysandcomics.html" class="button" id="previousWorkBtnTwo">Läs mer</a></p>
                         </div>
@@ -156,10 +159,11 @@
                             </p>
                         </div>
                     </div>
-
+-->
+<!-- 
                     <div class="mySlides fade">
                         <div class="halfBox">
-                            <img id="customerimg" src="bilder/sarasjoblom.png" alt="" />
+                            <img class="customerimg" src="bilder/sarasjoblom.png" alt="" />
                             <br><br>
                             <p><a href="sarasjoblom.html" class="button" id="previousWorkBtnTwo">Läs mer</a></p>
                         </div>
@@ -170,13 +174,24 @@
                                 <a href="sarasjoblom.html" class="button">Läs mer</a>
                             </p>
                         </div>
-                    </div>
+                    </div> 
+-->
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
+            <div class="containerFullWidth bottomContainer">
+            </div>
+
             <div id="foot">
+                <div class="containerFullWidth socialMedia">
+                    <h2>Följ oss</h2>
+                    <a href="https://www.facebook.com/newsab.se" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a href="https://www.instagram.com/newsab.se/" target="_blank"><span class="fa fa-instagram"></span></a>
+                    <a href="https://www.linkedin.com/company/newsab" target="_blank"><span class="fa fa-linkedin"></span></a>
+                    <a href="https://github.com/newsab" target="_blank"><span class="fa fa-github"></span></a> 
+                </div>
                 <p>&copy; 2020 <strong>Nilsson</strong> <strong>Enerholm</strong> Webb & Systemutveckling AB All Rights
                     Reserved </p>
                     <p>Icons and Illustrations from <a href="https://icons8.com" target="_blank">Icons8</a></p>

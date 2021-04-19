@@ -18,6 +18,15 @@
   line-height: 175%;
 }
 
+.topRight p,
+.topRight h1,
+.topRight h2,
+.topRight h3 {
+  margin: 0px 30px 20px 30px;
+  text-align: left;
+  line-height: 175%;
+}
+
 .second {
   height: fit-content;
   background-color: var(--secondFontColor);
@@ -25,17 +34,25 @@
 }
 
 .second h2,
-.second h3,
-.previousWorkHeading h2 {
+.second h3{
   color: var(--mainColor);
   text-align: center;
   margin: 50px 0px 25px 0px;
+}
+
+.thirdBoxImgHolder {
+  height: 7em;
 }
 
 .thirdBoxImage {
   height: auto;
   width: 80%;
   cursor: pointer;
+}
+
+.thirdBoxImage:hover {
+  height: auto;
+  width: 85%;
 }
 
 .secondInfo {
@@ -101,42 +118,10 @@
   display: none;
 }
 
-.previousWork {
-  height: fit-content;
-}
-
-#previousWorkBtnOne{
-  margin-right: 10px;
-}
-
-.previousWorkRight {
-  display: none;
-}
-
-.previousWork p {
-  margin: 0px 0px 0px 0px;
-  text-align: left;
-  line-height: 150%;
-  color: var(--mainColor);
-}
-
-#customerimg {
-  height: auto;
-  width: 70%;
-  margin: auto;
-}
-
-.previousWork p,
-.previousWork h3 {
-  margin: 0px 100px 0px 0px;
-  text-align: left;
-  line-height: 175%;
-  color: var(--mainColor);
-}
-
 .third {
   height: fit-content;
   background-color: var(--mainColor);
+  border: 2px, solid, var(--mainFontColor);
 }
 
 #thirdImage {
@@ -176,6 +161,11 @@
     width: 60%;
   }
 
+  .thirdBoxImage:hover {
+    height: auto;
+    width: 65%;
+  }
+
   .thirdRight p,
   .thirdRight h2 {
     margin: 20px 100px 0px 100px;
@@ -209,26 +199,16 @@
     width: 50%;
   }
 
-  .previousWork {
-    height: 30em;
-  }
-
-  #previousWorkBtnOne, #previousWorkBtnTwo{
-    display: none;
-  }
-
-  .previousWorkRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .third {
     height: 25em;
   }
 
   .thirdBoxImage {
     width: 40%;
+  }
+
+  .thirdBoxImage:hover {
+    width: 45%;
   }
 
   .thirdRight p,

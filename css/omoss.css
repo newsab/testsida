@@ -18,6 +18,13 @@
     color: var(--mainFontColor);
 }
 
+.topRight p, .topRight h1, .topRight h2{
+    margin: 20px 50px 0px 50px;
+    text-align: left;
+    line-height: 175%;
+    color: var(--mainFontColor);
+}
+
 .aboutUs h2, .aboutUsHeading h2, .socialMedia h2 {
     color: var(--mainColor);
     text-align: center;
@@ -31,6 +38,7 @@
 .aboutUs{
     height: fit-content;
     padding-top: 12.5em;
+    padding-bottom: 14.5em;
 }
 
 #mats{
@@ -156,22 +164,6 @@
     padding: 3%; 
     text-decoration: none;
     line-height: 175%;
-}
-
-.socialMedia{
-    height: fit-content;
-    padding-bottom: 3em;
-    background-color: var(--mainColor);
-    text-align: center;
-}
-
-.socialMedia a{
-    font-size: 50px;
-    margin: 20px 5% 20px 5%;
-}
-
-.socialMedia a:hover .socialMedia h2{
-    color: var(--accentColor);
 }
 
 @media screen and (min-width: 480px){   
